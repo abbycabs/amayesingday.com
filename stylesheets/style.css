@@ -31,6 +31,15 @@
   margin:20vh 0 10vh;
 }
 
+#monogram {
+  background: url("../images/monogram.png") no-repeat center center;
+  background-size: contain;
+  height:80px;
+  width:80px;
+  margin:0 auto;
+  padding-bottom: 1em;
+}
+
 .deco {
   background-color:#F0EEE4;
 background-image:
@@ -90,9 +99,9 @@ a.down {
 }
 
 #last {
-  text-align: center;
+  text-align: right;
   background: #E1ABBC;
-  padding: 1em 0;
+  padding: 1em 2em;
 }
 
 #church {
