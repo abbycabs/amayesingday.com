@@ -31,9 +31,7 @@
   margin:20vh 0 10vh;
 }
 
-#ceremony {
-  /*background: white;*/
-  overflow:hidden;
+.deco {
   background-color:#F0EEE4;
 background-image:
 radial-gradient(circle at 100% 150%, white 24%, #F0EEE4 25%, #F0EEE4 28%, white 29%, white 36%, #F0EEE4 36%, #F0EEE4 40%, transparent 40%, transparent),
@@ -62,6 +60,15 @@ background-size:100px 50px;
   color:white;
 }
 
+#info {
+  background: url("../images/Abby-and-Jordan-12.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color:white;
+}
+
 .page {
   text-align: center;
   min-height: 80vh;
@@ -74,6 +81,7 @@ a.down {
   position:absolute;
   bottom: 2em;
   margin-left:-0.5em;
+  border:none;
 }
 
 .invert {
@@ -118,17 +126,15 @@ a.down {
   border-top-right-radius: 50px;
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
+  border:2px solid black;
 }
 
 #date {
-  border:2px solid white;
-  background: rgba(0, 0, 0, 0.4);
-  padding: 2em;
+  /*padding: 2em;*/
   float:right;
-  box-shadow: 2px 2px #333;
 }
 
-#date h3 a {
+.invert h3 {
   color:white;
 }
 
@@ -142,17 +148,21 @@ a.down {
 
 #poem {
   text-align: left;
-  border:2px solid white;
-  background: rgba(0, 0, 0, 0.4);
-  padding: 2em;
-  padding-left:1.5em;
-  box-shadow: 2px 2px #333;
   margin:0 auto;
-  width:360px;
+  max-width:440px;
+}
+
+#poem .wrap {
+  padding-left:1.5em;
 }
 
 #poem p {
   padding-left:1em;
+}
+
+a {
+  text-decoration: none;
+  border-bottom:1px solid #AAA;
 }
 
 #poem .cite {
@@ -165,4 +175,22 @@ a.down {
   text-align: center;
   padding:4em 0;
   position:relative;
+}
+
+.subhead {
+  font-style: italic;
+  color: #777;
+  font-size: 0.9em;
+  line-height: 1.2em;
+  padding-bottom:1em;
+}
+
+.textbox {
+  border:2px solid white;
+  background: rgba(0, 0, 0, 0.4);
+  box-shadow: 2px 2px #333;
+}
+
+.wrap {
+  padding:2em;
 }

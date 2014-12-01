@@ -171,6 +171,10 @@
         .container .offset-by-fourteen,
         .container .offset-by-fifteen { padding-left: 0; }
 
+        #church, #okw {
+          display:none;
+        }
+
     }
 
 

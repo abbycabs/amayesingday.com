@@ -64,13 +64,12 @@
 	h1, h2, h3, h4, h5, h6 {
 		color: #181818;
 		font-family: 'Poiret One', sans-serif;
-    text-transform: uppercase;
-		font-weight: normal; }
+    text-transform: uppercase }
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
 	h1 { font-size: 46px; line-height: 55px; margin-bottom: 19px;}
 	h2 { font-size: 35px; line-height: 45px; margin-bottom: 15px; }
 	h3 { font-size: 28px; line-height: 39px; margin-bottom: 13px; }
-	h4 { font-size: 21px; line-height: 35px; margin-bottom: 9px; }
+	h4 { font-size: 21px; line-height: 35px; margin-bottom: 5px; }
 	h5 { font-size: 17px; line-height: 29px; }
 	h6 { font-size: 14px; line-height: 26px; }
 	.subheader { color: #777; }
