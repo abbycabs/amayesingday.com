@@ -88,7 +88,7 @@
         <div id="date" class="eight columns textbox">
             <div class="wrap">
               <h3 style="font-weight:bold"><a href="http://en.wikipedia.org/wiki/Pi_Day" target="_blank">March 14th, 2015</a></h3>
-              <p>Pi Day is an annual celebration commemorating the mathematical constant π (pi). Pi Day is observed on March 14 (or 3/14 in the month/day date format), since 3, 1, and 4 are the first three significant digits of π in decimal form. In 2015, Pi Day will have special significance on 3/14/15 at 9:26:53 a.m. and p.m., with the date and time representing the first 10 digits of π.</p>
+              <p>Pi Day is an annual celebration commemorating the mathematical constant π (pi). Pi Day is observed on March 14 (or 3/14), since 3, 1, and 4 are the first three significant digits of π. In 2015, Pi Day will have special significance on 3/14/15 at 9:26:53 a.m. and p.m., with the date and time representing the first 10 digits of π.</p>
             </div>
         </div>
       </div>
@@ -184,14 +184,16 @@ $(document).ready(function(){
 
 
   if(isMobile){
+    var vh = $(window).height();
     $('.down:not(.arrow)').hide();
-    $('#first').height($(window).height());
-    $('#header').height($(window).height());
-    $('.page').css('min-height', ($(window).height() * 0.8));
-    $('.page').css('padding', '50px 0 4em');
-    $('.names').css('margin', '110px 0 0');
+    $('#first').height(vh);
+    $('#header').height(vh);
+    $('.page').css('min-height', (vh * 0.8));
+    var tenvh = (vh * 0.1);
+    $('.page').css('padding', tenvh + 'px 0 4em');
+    $('.names').css('margin', (tenvh * 2) + 'px 0 0');
 
-    $('.names').height($(window).height() * 0.5);
+    $('.names').height(vh * 0.5);
   }
   //.parallax(xPosition, speedFactor, outerHeight) options:
   //xPosition - Horizontal position of the element
