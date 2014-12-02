@@ -178,7 +178,8 @@
 <script type="text/javascript" src="scripts/jquery.scrollTo-1.4.2-min.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){
-  var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
+  var isMobile = /iPhone|iPod|iPad|Android|BlackBerry/i.test(navigator.userAgent) ? true : false;
+
   $('body').localScroll(800);
 
   //.parallax(xPosition, speedFactor, outerHeight) options:

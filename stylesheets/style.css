@@ -28,7 +28,7 @@
   background: url("../images/title.png") no-repeat center center;
   background-size: contain;
   height:50vh;
-  margin:20vh 0 10vh;
+  margin:20vh 0 0;
 }
 
 #monogram {
@@ -202,4 +202,23 @@ a {
 
 .wrap {
   padding:2em;
+}
+
+
+@media only screen and (max-width: 480px) {
+
+  #first, #header {
+    height: 550px;
+  }
+
+  #header .names {
+    height: 275px;
+    margin: 110px 0 0;
+  }
+
+  .page {
+    min-height: 500px;
+    padding: 50px 0 4em;
+  }
+
 }
