@@ -186,9 +186,11 @@ $(document).ready(function(){
   if(isMobile){
     $('#first').height($(window).height());
     $('#header').height($(window).height());
-    $('.page').height($(window).height() * 0.8);
-    $('.names').height($(window).height() * 0.5);
+    $('.page').css('min-height', ($(window).height() * 0.8));
+    $('.page').css('padding', '50px 0 4em');
+    $('.names').css('margin', '110px 0 0');
 
+    $('.names').height($(window).height() * 0.5);
   }
   //.parallax(xPosition, speedFactor, outerHeight) options:
   //xPosition - Horizontal position of the element
