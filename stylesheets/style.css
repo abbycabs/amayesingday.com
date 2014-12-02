@@ -1,0 +1,205 @@
+
+
+#first {
+  height:100vh;
+  background: url("../images/background.jpg") no-repeat left top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#header {
+  height:100vh;
+  width:100%;
+  background: url("../images/header.png") no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position:left;
+  position:absolute;
+  top:0;
+  left:0;
+  text-align: center;
+}
+
+#header .names {
+  background: url("../images/title.png") no-repeat center center;
+  background-size: contain;
+  height:50vh;
+  margin:20vh 0 10vh;
+}
+
+#monogram {
+  background: url("../images/monogram.png") no-repeat center center;
+  background-size: contain;
+  height:80px;
+  width:80px;
+  margin:0 auto;
+  padding-bottom: 1em;
+}
+
+.deco {
+  background-color:#F0EEE4;
+background-image:
+radial-gradient(circle at 100% 150%, white 24%, #F0EEE4 25%, #F0EEE4 28%, white 29%, white 36%, #F0EEE4 36%, #F0EEE4 40%, transparent 40%, transparent),
+radial-gradient(circle at 0    150%, white 24%, #F0EEE4 25%, #F0EEE4 28%, white 29%, white 36%, #F0EEE4 36%, #F0EEE4 40%, transparent 40%, transparent),
+radial-gradient(circle at 50%  100%, #F0EEE4 10%, white 11%, white 23%, #F0EEE4 24%, #F0EEE4 30%, white 31%, white 43%, #F0EEE4 44%, #F0EEE4 50%, white 51%, white 63%, #F0EEE4 64%, #F0EEE4 71%, transparent 71%, transparent),
+radial-gradient(circle at 100% 50%, #F0EEE4 5%, white 6%, white 15%, #F0EEE4 16%, #F0EEE4 20%, white 21%, white 30%, #F0EEE4 31%, #F0EEE4 35%, white 36%, white 45%, #F0EEE4 46%, #F0EEE4 49%, transparent 50%, transparent),
+radial-gradient(circle at 0    50%, #F0EEE4 5%, white 6%, white 15%, #F0EEE4 16%, #F0EEE4 20%, white 21%, white 30%, #F0EEE4 31%, #F0EEE4 35%, white 36%, white 45%, #F0EEE4 46%, #F0EEE4 49%, transparent 50%, transparent);
+background-size:100px 50px;
+}
+
+#pi {
+  background: url("../images/Abby-and-Jordan-93.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color:white;
+}
+
+#third {
+  background: url("../images/Abby-and-Jordan-104.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color:white;
+}
+
+#info {
+  background: url("../images/Abby-and-Jordan-12.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color:white;
+}
+
+.page {
+  text-align: center;
+  min-height: 80vh;
+  padding:10vh 0;
+  position:relative;
+}
+
+a.down {
+  font-size:2em;
+  position:absolute;
+  bottom: 2em;
+  margin-left:-0.5em;
+  border:none;
+}
+
+.invert {
+  color:white;
+  text-shadow: 2px 2px #111;
+}
+
+#last {
+  text-align: right;
+  background: #E1ABBC;
+  padding: 1em 2em;
+}
+
+#church {
+  background: url(../images/church-circle.png) no-repeat;
+  background-size:150px auto;
+  left:0;
+  width: 150px;
+  z-index: 200;
+}
+
+
+#okw {
+  background: url(../images/okw-circle.png) no-repeat;
+  background-size:150px auto;
+  right:0;
+  width: 150px;
+  z-index: 200;
+}
+
+.bg {
+  height: 1000px;
+  margin: 0 auto;
+  padding: 0;
+  position: absolute;
+  z-index: 200;
+}
+
+.circle img{
+  width: 100px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border:2px solid black;
+}
+
+#date {
+  /*padding: 2em;*/
+  float:right;
+}
+
+.invert h3 {
+  color:white;
+}
+
+.invert a {
+  color:white;
+}
+
+.invert a:hover {
+  color:#E1ABBC;
+}
+
+#poem {
+  text-align: left;
+  margin:0 auto;
+  max-width:440px;
+}
+
+#poem .wrap {
+  padding-left:1.5em;
+}
+
+#poem p {
+  padding-left:1em;
+}
+
+a {
+  text-decoration: none;
+  border-bottom:1px solid #AAA;
+}
+
+#poem .cite {
+  float:right;
+  font-style:italic;
+  font-size:0.8em;
+}
+
+#second {
+  text-align: center;
+  padding:4em 0;
+  position:relative;
+}
+
+.subhead {
+  font-style: italic;
+  color: #777;
+  font-size: 0.9em;
+  line-height: 1.2em;
+  padding-bottom:1em;
+}
+
+.textbox {
+  border:2px solid white;
+  background: rgba(0, 0, 0, 0.4);
+  box-shadow: 2px 2px #333;
+}
+
+.wrap {
+  padding:2em;
+}
