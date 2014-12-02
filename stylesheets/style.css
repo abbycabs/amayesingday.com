@@ -210,21 +210,3 @@ a {
   padding:2em;
 }
 
-
-@media only screen and (max-width: 480px) {
-
-  #first, #header {
-    height: 550px;
-  }
-
-  #header .names {
-    height: 275px;
-    margin: 110px 0 0;
-  }
-
-  .page {
-    min-height: 500px;
-    padding: 50px 0 4em;
-  }
-
-}
