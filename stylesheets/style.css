@@ -82,6 +82,35 @@ background-size:100px 50px;
   color:white;
 }
 
+#details:before {
+  content: "";
+  background: url("../images/map.jpg") no-repeat center;
+  background-size: 650px auto;
+  background-position: center 250px;
+  opacity:0;
+
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -ms-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+#details.map:before {
+  opacity:0.8;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -ms-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
 .page {
   text-align: center;
   min-height: 500px;

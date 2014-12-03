@@ -46,7 +46,7 @@
 
 	<!-- Delete everything in this .container and get started on your own site! -->
 
-
+  <div id="map"></div>
   <div id="first">
   </div>
   <div id="header" class="invert">
@@ -183,8 +183,8 @@ $(document).ready(function(){
   $('body').localScroll(800);
 
 
+  var vh = $(window).height();
   if(isMobile){
-    var vh = $(window).height();
     $('.down:not(.arrow)').hide();
     $('#first').height(vh);
     $('#header').height(vh);
@@ -201,13 +201,24 @@ $(document).ready(function(){
   //outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
   if(!isMobile){
     $('#header').parallax("50%", 0.6);
-    $('#church').parallax("20%", 0.1);
-    $('#okw').parallax("20%", 0.8);
+    $('#church').parallax("20%", 1.5);
+    $('#okw').parallax("20%", 0.1);
 
     $('#pi').parallax("50%", 0.3);
     $('#third').parallax("50%", 0.4);
     $('#info').parallax("50%", 0.1);
+
+    $(window).scroll(function() {
+      var st = $(window).scrollTop();
+      if((st > (vh*0.9)) && (st < (vh * 1.1))){
+        $('#details').addClass('map');
+      } else {
+        $('#details').removeClass('map');
+      }
+    });
   }
+
+
 });
 
 </script>

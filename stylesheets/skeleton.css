@@ -124,7 +124,7 @@
     }
 
 
-/*  #Mobile (Portrait)
+/*  #Mobile (Portrait)chu
 ================================================== */
 
     /* Note: Design for a width of 320px */
@@ -175,6 +175,10 @@
           display:none;
         }
 
+
+        #details.map:before {
+          opacity:0 !important;
+        }
     }
 
 
