@@ -126,6 +126,12 @@ a.down {
   bottom: 2em;
   margin-left:-0.5em;
   border:none;
+  box-shadow: none;
+}
+
+a.down:hover {
+  box-shadow: none;
+  border:none;
 }
 
 .invert {
@@ -206,7 +212,14 @@ a.down {
 
 a {
   text-decoration: none;
-  border-bottom:1px solid #AAA;
+  border-bottom:1px solid #FFDBE7;
+  box-shadow: 0px -4px 0px #FFDBE7 inset;
+  color: inherit;
+}
+
+a:hover {
+  border-bottom:1px solid #E1ABBC;
+  box-shadow: 0px -4px 0px #E1ABBC inset;
 }
 
 #poem .cite {
