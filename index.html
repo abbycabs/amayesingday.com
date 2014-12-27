@@ -53,8 +53,13 @@
 
     <div class="container">
         <div class="names"></div>
+      <div>
+        <a href="/rsvp" class="rsvp textbox">
+          RSVP
+        </a>
+      </div>
     </div>
-    <a href="#details" class="down arrow"><i class="fa fa-chevron-down"></i></a>
+    <a href="#details" class="down arrow"><i class="fa fa-angle-down"></i></a>
   </div>
 
 
@@ -78,7 +83,7 @@
 
 
       </div>
-      <a href="#third" class="down"><i class="fa fa-chevron-down"></i></a>
+      <a href="#third" class="down"><i class="fa fa-angle-down"></i></a>
 
     </div>
 
@@ -92,7 +97,7 @@
             </div>
         </div>
       </div>
-      <a href="#second" class="down"><i class="fa fa-chevron-down"></i></a>
+      <a href="#second" class="down"><i class="fa fa-angle-down"></i></a>
     </div>
     <div id="second" class="page deco">
       <div class="container">
@@ -114,7 +119,7 @@
             <h4>Michael</h4><div class="subhead">Groomsman, brother-in-law of the groom</div></div>
           </div>
       </div>
-        <a href="#pi" class="down"><i class="fa fa-chevron-down"></i></a>
+        <a href="#pi" class="down"><i class="fa fa-angle-down"></i></a>
 
     </div>
   <div id="pi" class="page invert">
@@ -133,7 +138,7 @@
           </p>
         </div>
       </div>
-    <a href="#ceremony" class="down"><i class="fa fa-chevron-down"></i></a>
+    <a href="#ceremony" class="down"><i class="fa fa-angle-down"></i></a>
 
   </div>
 
@@ -147,7 +152,7 @@
       <h3>More updates coming!</h3>
       <p>We'll keep updating this site with more details as we get closer to the wedding!</p>
   	</div><!-- container -->
-      <a href="#info" class="down"><i class="fa fa-chevron-down"></i></a>
+      <a href="#info" class="down"><i class="fa fa-angle-down"></i></a>
 
   </div>
   <div id="info" class="page invert">
@@ -161,7 +166,17 @@
           </div>
         </div>
     </div>
-    <a href="#header" class="down"><i class="fa fa-chevron-up"></i></a>
+    <a href="#rsvp" class="down"><i class="fa fa-angle-down"></i></a>
+  </div>
+  <div id="rsvp" class="page deco">
+    <div class="container">
+        <div class="sixteen columns">
+          <h1>RSVP</h1>
+          <p>The favour a reply is requested by the fourteenth of February</p>
+          <a href='/rsvp' class="rsvp-button" style="float:none;margin:0 auto;padding:5px 15px">RSVP NOW</a>
+        </div>
+    </div>
+    <a href="#header" class="down"><i class="fa fa-angle-up"></i></a>
   </div>
   <div id="last">
     <small>made with <3 by <a href="http://abigailcabunoc.com">the bride</a></small>
@@ -184,16 +199,16 @@ $(document).ready(function(){
 
 
   var vh = $(window).height();
+  if($('#header').height() > vh){
+    $('#first').height($('#header').height());
+    $('#header').css('padding-bottom', '100px');
+    $('#first').css('padding-bottom', '100px');
+  }
   if(isMobile){
     $('.down:not(.arrow)').hide();
     $('#first').height(vh);
     $('#header').height(vh);
     $('.page').css('min-height', (vh * 0.8));
-    var tenvh = (vh * 0.1);
-    $('.page').css('padding', tenvh + 'px 0 4em');
-    $('.names').css('margin', (tenvh * 2) + 'px 0 0');
-
-    $('.names').height(vh * 0.5);
   }
   //.parallax(xPosition, speedFactor, outerHeight) options:
   //xPosition - Horizontal position of the element

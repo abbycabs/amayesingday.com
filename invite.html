@@ -1,0 +1,30 @@
+{% if invite %}
+<br />
+<p class="invited">{{ invite.firstLine }}<br />
+{{ invite.secondLine }}</p>
+
+<div class="controls">
+  <a class="next-button rsvp-button" class="control-button" onClick="$('.slick-slider').slickGoTo(1);setActive(1);activateLink(0);activateLink(1);">Next</a>
+</div>
+<small class="pull-right" style="clear:both"><a href="/rsvp">This isn't me, try again</a></small>
+
+<script>
+  $('.guests-{{ invite.count }}').hide();
+  // console.log(" {{ invite.guests[0] }} ");
+  $('#entry_955958692').val("{{email}}");
+
+  var guests = $('.guest-name');
+
+  {% for guest in invite.guests %}
+    guests.eq({{ loop.index - 1 }}).val("{{ guest }}");
+  {% endfor %}
+
+</script>
+
+{% else %}
+
+<p>Sorry, we couldn't find an invitation for <em>{{email}}</em>. For help, please email <a href="mailto:amayesingday@gmail.com">amayesingday@gmail.com</a></p>
+
+<small><a href="/rsvp">Try searching again</a></small>
+
+{% endif %}
