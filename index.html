@@ -199,12 +199,13 @@ $(document).ready(function(){
 
 
   var vh = $(window).height();
-  if(isMobile){
+  // if(isMobile){
     $('.down:not(.arrow)').hide();
     $('#first').height(vh);
     $('#header').height(vh);
     $('.page').css('min-height', (vh * 0.8));
-  } else if($('#header').height() > vh){
+  // } else
+  if($('#header').height() > vh){
     $('#first').height($('#header').height());
     $('#header').css('padding-bottom', '100px');
     $('#first').css('padding-bottom', '100px');
