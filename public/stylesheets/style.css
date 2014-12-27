@@ -277,7 +277,7 @@ a.rsvp:hover {
 
 #form-wrapper {
   background: #FFF;
-  padding: 1em 2em 1em 0;
+  padding: 1em 2em;
   border:1px solid #DDD;
   max-width:440px;
   margin:0 auto;
@@ -375,6 +375,7 @@ a.rsvp-button:hover, input.rsvp-button:hover {
 .slick-dots {
   position:relative;
   bottom:0;
+  margin-bottom:5px;
 }
 
 .slick-dots li {
@@ -399,4 +400,12 @@ a.rsvp-button:hover, input.rsvp-button:hover {
 
 .thanks {
   text-align: center;
+}
+
+
+@media only screen and (max-width: 767px) {
+
+#form-wrapper {
+  padding: 1em;
+}
 }
