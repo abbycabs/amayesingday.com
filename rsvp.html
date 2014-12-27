@@ -140,13 +140,13 @@
               <h3>RSVP</h3>
 
 
-              <div id="invite-found">
-                <p><small>The favour of a reply is requested by February 14th</small></p>
-                <p>Please enter your email address:</p>
-
+                <small><p>Please enter your email address:</p></small>
                 <div class="ss-form-entry">
                   <input notab="notab" class="ss-q-short" dir="auto" id="email" title="" type="text" value="" >
-                </div><a class="rsvp-button" id="search" style="float:left">Search</a>
+                </div>
+              <div id="invite-found">
+
+                <a class="rsvp-button" id="search" style="float:left">Search</a>
               </div>
             </div>
 
@@ -769,14 +769,14 @@ $(document).ready(function(){
 
   $('input[value="Attends with Pleasure"]').click(function(){
     $(this).closest('.ss-form-question').next('.menu').slideDown(function(){
-      $('.slick-slider').slickGoTo(1, true);
+      $('.slick-slider').slickGoTo(1);
     });
 
   });
 
   $('input[value="Declines with Regrets"]').click(function(){
     $(this).closest('.ss-form-question').next('.menu').slideUp(function(){
-      $('.slick-slider').slickGoTo(1, true);
+      $('.slick-slider').slickGoTo(1);
     });
 
   });
@@ -789,16 +789,15 @@ $(document).ready(function(){
   });
   $('#search').click(function(){
     var email = $('#email').val();
-    $('#invite-found').load('/invite/' + email);
+    $('#invite-found').load('/invite/' + email, function(){
+
+      $('.slick-slider').slickGoTo(0);
+    });
   });
 
   $('#menu-done').click(function(){
-    $('.slick-slider').slickGoTo(2,true);
+    $('.slick-slider').slickGoTo(2);
     setActive(2);activateLink(2);
-  });
-
-  $('.next-button').click(function(){
-    window.scrollTo(0, 0);
   });
 
   });
