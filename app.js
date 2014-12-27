@@ -48,17 +48,8 @@ app.get('/thanks', function(request, response) {
 });
 
 app.get('/invite/:invite', function(request, response, next){
-  Invite.find({ emails: request.params.invite }, function(err, invite){
+  Invite.find({ emails: new RegExp('^'+request.params.invite +'$', "i") }, function(err, invite){
     if (err) return console.error(err);
-    // response.json(invite[0]);
     response.render('invite', {invite: invite[0], email:request.params.invite});
-  });
-});
-
-app.get('/guests/:invite', function(request, response, next){
-  Invite.find({ emails: request.params.invite }, function(err, invite){
-    if (err) return console.error(err);
-    // response.json(invite[0]);
-    response.render('guests', {invite: invite[0]});
   });
 });
