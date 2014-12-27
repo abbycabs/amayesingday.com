@@ -11,13 +11,25 @@
 <script>
   $('.guests-{{ invite.count }}').hide();
   // console.log(" {{ invite.guests[0] }} ");
-  $('#entry_955958692').val("{{email}}");
 
   var guests = $('.guest-name');
 
   {% for guest in invite.guests %}
     guests.eq({{ loop.index - 1 }}).val("{{ guest }}");
   {% endfor %}
+
+
+  $('#menu-done').click(function(){
+    if ($('input[value="Attends with Pleasure"]:checked').size() < 1) {
+      console.log($('input[value="Attends with Pleasure"]:checked').size());
+      $('#declines').hide();
+    } else {
+      $('#declines').show();
+    }
+    $('.slick-slider').slickGoTo(2);
+    setActive(2);activateLink(2);
+    $('#entry_955958692').val("{{email}}");
+  });
 
 </script>
 

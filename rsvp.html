@@ -796,16 +796,7 @@ $(document).ready(function(){
     });
   });
 
-  $('#menu-done').click(function(){
-    if ($('input[value="Attends with Pleasure"]:checked').size() < 1) {
-      console.log($('input[value="Attends with Pleasure"]:checked').size());
-      $('#declines').hide();
-    } else {
-      $('#declines').show();
-    }
-    $('.slick-slider').slickGoTo(2);
-    setActive(2);activateLink(2);
-  });
+
 
   });
 
