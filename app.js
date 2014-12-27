@@ -21,7 +21,7 @@ app.listen(app.get('port'), function() {
 });
 
 
-mongoose.connect('mongodb://localhost/rsvp');
+mongoose.connect( process.env.MONGOLAB_URI || 'mongodb://localhost/rsvp');
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function callback () {
