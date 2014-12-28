@@ -372,7 +372,7 @@ a.rsvp-button:hover, input.rsvp-button:hover {
   padding-top:7px;
   font-size:16pt;
 }
-.slick-dots {
+#ss-form .slick-dots {
   position:relative;
   bottom:0;
   margin-bottom:5px;
