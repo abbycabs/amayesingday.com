@@ -386,6 +386,18 @@ a.rsvp-button:hover, input.rsvp-button:hover {
     cursor:default;
 }
 
+.number {
+  background: #A87485;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  color:#FFF;
+  padding:4px 10px;
+  font-weight: 600;
+  margin:0 10px;
+  font-family:'Open Sans', Arial, sans-serif;;
+}
+
 .slick-dots li.active-link {
   cursor:pointer;
 }
@@ -408,4 +420,8 @@ a.rsvp-button:hover, input.rsvp-button:hover {
 #form-wrapper {
   padding: 1em;
 }
+}
+
+.directions {
+  margin-top: 35px;
 }
